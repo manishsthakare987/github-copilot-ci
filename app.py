@@ -2,6 +2,11 @@
 def add(a, b):
     return a + b
 
+#add substract function here
+def subtract(a, b):
+    return a - b
+
+
 #add main function to run
 if __name__ == "__main__":
     print(add(1, 2))  # Output: 3
@@ -15,5 +20,17 @@ if __name__ == "__main__":
     print(add(0, 1)) # Output: 1
     print(add(1, 0)) # Output: 1
     print(add(0, -1)) # Output: -1
-    print(add(-1, 0)) # Output: -1
-        
+    print(add(-1, 0)) # Output: -1  
+    print(subtract(1, 2))  # Output: -1
+    print(subtract(-1, 1))  # Output: -2
+    print(subtract(0, 0))   # Output: 0
+    print(subtract(-1, -1)) # Output: 0 
+    print(subtract(1.5, 2.5)) # Output: -1.0
+    print(subtract(-1.5, -2.5)) # Output: 1.0
+    print(subtract(1, -1)) # Output: 2  
+    print(subtract(-1, 1)) # Output: -2
+    print(subtract(0, 1)) # Output: -1
+    print(subtract(1, 0)) # Output: 1
+    print(subtract(0, -1)) # Output: 1
+    print(subtract(-1, 0)) # Output: -1
+    
