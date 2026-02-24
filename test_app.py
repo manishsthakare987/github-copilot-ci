@@ -29,11 +29,28 @@ def test_subtract():
     assert subtract(0, 1) == -1
     assert subtract(1, 0) == 1
     assert subtract(0, -1) == 1
-    assert subtract(-1, 0) == -1    
+    assert subtract(-1, 0) == -1   
+
+def test_multiply():
+    from app import multiply
+    assert multiply(1, 2) == 2
+    assert multiply(-1, 1) == -1    
+    assert multiply(0, 0) == 0
+    assert multiply(-1, -1) == 1
+    assert multiply(1.5, 2.5) == 3.75 
+    assert multiply(-1.5, -2.5) == 3.75
+    assert multiply(1, -1) == -1 
+    assert multiply(-1, 1) == -1
+    assert multiply(0, 1) == 0       
+    assert multiply(1, 0) == 0
+    assert multiply(0, -1) == 0
+    assert multiply(-1, 0) == 0
+
 
 #add main function to run the tests
 if __name__ == "__main__":
     test_add()
     test_subtract()
-                    
+    test_multiply() 
+
     print("All tests passed!")
