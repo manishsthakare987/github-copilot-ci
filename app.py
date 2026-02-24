@@ -1,0 +1,19 @@
+#add function here  
+def add(a, b):
+    return a + b
+
+#add main function to run
+if __name__ == "__main__":
+    print(add(1, 2))  # Output: 3
+    print(add(-1, 1))  # Output: 0
+    print(add(0, 0))   # Output: 0
+    print(add(-1, -1)) # Output: -2
+    print(add(1.5, 2.5)) # Output: 4.0
+    print(add(-1.5, -2.5)) # Output: -4.0
+    print(add(1, -1)) # Output: 0
+    print(add(-1, 1)) # Output: 0
+    print(add(0, 1)) # Output: 1
+    print(add(1, 0)) # Output: 1
+    print(add(0, -1)) # Output: -1
+    print(add(-1, 0)) # Output: -1
+        
